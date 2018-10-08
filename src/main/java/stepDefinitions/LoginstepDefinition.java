@@ -24,7 +24,6 @@ public class LoginstepDefinition {
 	public void user_is_on_Home_Page() throws Throwable {
 	    driver=new ChromeDriver();
 	    driver.get("https://www.amazon.in/");
-
 	}
 
 	@When("^User Navigate to LogIn Page$")
@@ -34,8 +33,6 @@ public class LoginstepDefinition {
 	    Assert.assertEquals("Amazon Sign In", actual);
 	   
 	}
-
-	
 
 	@Then("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void user_enters_UserName_and_Password(String UserName,String Password) throws Throwable {
@@ -56,7 +53,7 @@ public class LoginstepDefinition {
 	public void check_title_of_the_homepage() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    String title=driver.getTitle();
-	    System.out.println("Title pf the page:"+title);
+	    System.out.println("Title of the page:"+title);
 	}
 	
 	@Then("^close the browser$")
@@ -85,8 +82,9 @@ public class LoginstepDefinition {
 	@Then("^Enter IOS Product$")
 	public void enter_IOS_Product(DataTable table) throws Throwable {
 		List<List<String>> data=table.raw();
+		
 		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox' and @tabindex='19']")).sendKeys(data.get(0).get(0),Keys.ENTER);
-
+		
 	}
 
 	@Then("^Print product name and Price of first product$")
