@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
 formatter.feature({
-  "line": 2,
+  "line": 1,
   "name": "LogIn Action Test",
   "description": "",
   "id": "login-action-test",
@@ -9,27 +9,27 @@ formatter.feature({
 formatter.scenarioOutline({
   "comments": [
     {
-      "line": 4,
+      "line": 3,
       "value": "#Scenario: Successful Login with Valid Credentials"
     },
     {
-      "line": 5,
+      "line": 4,
       "value": "#Given User is on Home Page"
     },
     {
-      "line": 6,
+      "line": 5,
       "value": "#When User Navigate to LogIn Page"
     },
     {
-      "line": 7,
+      "line": 6,
       "value": "#Then User enters UserName and Password"
     },
     {
-      "line": 8,
+      "line": 7,
       "value": "#And Validate logged user"
     },
     {
-      "line": 9,
+      "line": 8,
       "value": "#Then close the browser"
     }
   ],
@@ -38,7 +38,13 @@ formatter.scenarioOutline({
   "description": "",
   "id": "login-action-test;successful-login-with-valid-credentials",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@LoginTest"
+    }
+  ]
 });
 formatter.step({
   "line": 12,
@@ -66,7 +72,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 19,
+  "line": 18,
   "name": "",
   "description": "",
   "id": "login-action-test;successful-login-with-valid-credentials;",
@@ -77,7 +83,7 @@ formatter.examples({
         "Password",
         "user"
       ],
-      "line": 20,
+      "line": 19,
       "id": "login-action-test;successful-login-with-valid-credentials;;1"
     },
     {
@@ -86,7 +92,7 @@ formatter.examples({
         "jodha@123",
         "balaji"
       ],
-      "line": 21,
+      "line": 20,
       "id": "login-action-test;successful-login-with-valid-credentials;;2"
     },
     {
@@ -95,7 +101,7 @@ formatter.examples({
         "jodha@123",
         "Supriya"
       ],
-      "line": 22,
+      "line": 21,
       "id": "login-action-test;successful-login-with-valid-credentials;;3"
     },
     {
@@ -104,19 +110,25 @@ formatter.examples({
         "jodha@123",
         "balaji"
       ],
-      "line": 23,
+      "line": 22,
       "id": "login-action-test;successful-login-with-valid-credentials;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 21,
+  "line": 20,
   "name": "Successful Login with Valid Credentials",
   "description": "",
   "id": "login-action-test;successful-login-with-valid-credentials;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@LoginTest"
+    }
+  ]
 });
 formatter.step({
   "line": 12,
@@ -154,14 +166,14 @@ formatter.match({
   "location": "LoginstepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 22662827429,
+  "duration": 35752969377,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 2119120924,
+  "duration": 6062132127,
   "status": "passed"
 });
 formatter.match({
@@ -178,7 +190,7 @@ formatter.match({
   "location": "LoginstepDefinition.user_enters_UserName_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 12649414048,
+  "duration": 10079186500,
   "status": "passed"
 });
 formatter.match({
@@ -191,23 +203,29 @@ formatter.match({
   "location": "LoginstepDefinition.validate_logged_user(String)"
 });
 formatter.result({
-  "duration": 317558546,
+  "duration": 76883229,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2313209594,
+  "duration": 2304120280,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 22,
+  "line": 21,
   "name": "Successful Login with Valid Credentials",
   "description": "",
   "id": "login-action-test;successful-login-with-valid-credentials;;3",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@LoginTest"
+    }
+  ]
 });
 formatter.step({
   "line": 12,
@@ -245,14 +263,14 @@ formatter.match({
   "location": "LoginstepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 8920207796,
+  "duration": 8916697618,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 1461790406,
+  "duration": 2925766047,
   "status": "passed"
 });
 formatter.match({
@@ -269,7 +287,7 @@ formatter.match({
   "location": "LoginstepDefinition.user_enters_UserName_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 4232675541,
+  "duration": 6073606455,
   "status": "passed"
 });
 formatter.match({
@@ -282,23 +300,29 @@ formatter.match({
   "location": "LoginstepDefinition.validate_logged_user(String)"
 });
 formatter.result({
-  "duration": 237217531,
+  "duration": 336057218,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2364119556,
+  "duration": 2311438653,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
+  "line": 22,
   "name": "Successful Login with Valid Credentials",
   "description": "",
   "id": "login-action-test;successful-login-with-valid-credentials;;4",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@LoginTest"
+    }
+  ]
 });
 formatter.step({
   "line": 12,
@@ -336,14 +360,14 @@ formatter.match({
   "location": "LoginstepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 9263878626,
+  "duration": 9462776730,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 1338675815,
+  "duration": 1852879944,
   "status": "passed"
 });
 formatter.match({
@@ -360,7 +384,7 @@ formatter.match({
   "location": "LoginstepDefinition.user_enters_UserName_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 8078084194,
+  "duration": 5080860807,
   "status": "passed"
 });
 formatter.match({
@@ -373,36 +397,42 @@ formatter.match({
   "location": "LoginstepDefinition.validate_logged_user(String)"
 });
 formatter.result({
-  "duration": 80482739,
+  "duration": 218000508,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2310743119,
+  "duration": 2310660633,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
+  "line": 26,
   "name": "check title of amazon page",
   "description": "",
   "id": "login-action-test;check-title-of-amazon-page",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 25,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 28,
+  "line": 27,
   "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 29,
+  "line": 28,
   "name": "check title of the homepage",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 29,
   "name": "close the browser",
   "keyword": "Then "
 });
@@ -410,21 +440,21 @@ formatter.match({
   "location": "LoginstepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 15206486042,
+  "duration": 8073104554,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.check_title_of_the_homepage()"
 });
 formatter.result({
-  "duration": 16346568,
+  "duration": 25322790,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2315400441,
+  "duration": 2310104974,
   "status": "passed"
 });
 formatter.scenario({
@@ -433,7 +463,13 @@ formatter.scenario({
   "description": "",
   "id": "login-action-test;validate-user",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 31,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
   "line": 33,
@@ -459,78 +495,77 @@ formatter.match({
   "location": "LoginstepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 35004262941,
+  "duration": 6522858735,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 1129535147,
+  "duration": 2588649315,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.user_enters_UserName()"
 });
 formatter.result({
-  "duration": 924601220,
+  "duration": 1461218247,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2314683518,
+  "duration": 2320892182,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 38,
-  "name": "Search IOS Product",
+  "line": 50,
+  "name": "Successful Login with Valid Credentials with headers",
   "description": "",
-  "id": "login-action-test;search-ios-product",
+  "id": "login-action-test;successful-login-with-valid-credentials-with-headers",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 49,
+      "name": "@LoginTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 39,
+  "line": 51,
   "name": "User is on Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 40,
+  "line": 52,
   "name": "User Navigate to LogIn Page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 41,
-  "name": "User enters UserName and Password",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 42,
-  "name": "Validate logged user",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "Enter IOS Product",
+  "line": 53,
+  "name": "User enters username and password",
   "rows": [
     {
       "cells": [
-        "iphone"
+        "username",
+        "password"
       ],
-      "line": 44
+      "line": 55
+    },
+    {
+      "cells": [
+        "bhadrebalaji@gmail.com",
+        "jodha@123"
+      ],
+      "line": 56
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 45,
-  "name": "Print product name and Price of first product",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 46,
+  "line": 58,
   "name": "close the browser",
   "keyword": "Then "
 });
@@ -538,49 +573,28 @@ formatter.match({
   "location": "LoginstepDefinition.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 34693612186,
+  "duration": 59281078281,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.user_Navigate_to_LogIn_Page()"
 });
 formatter.result({
-  "duration": 4394617445,
+  "duration": 4435758129,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginstepDefinition.user_enters_UserName_and_Password()"
+  "location": "LoginstepDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 19265225486,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginstepDefinition.validate_logged_user()"
-});
-formatter.result({
-  "duration": 65873504,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginstepDefinition.enter_IOS_Product(DataTable)"
-});
-formatter.result({
-  "duration": 7361150696,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginstepDefinition.print_product_name_and_Price()"
-});
-formatter.result({
-  "duration": 77730374,
+  "duration": 44024835061,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginstepDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2309086422,
+  "duration": 2312631095,
   "status": "passed"
 });
 });

@@ -11,10 +11,8 @@ import cucumber.api.junit.Cucumber;
 		,glue={"stepDefinitions"},
 		dryRun=false,
 		monochrome=true,
-//				format = { "pretty", "json:target/cucumber-reports/Cucumber.json",
-//						"junit:target/cucumber-reports/Cucumber.xml",
-//						"html:target/cucumber-reports"}
-				plugin = {"html:target/site/cucumber-pretty","json:target/cucumber.json"}
+		plugin = {"html:target/site/cucumber-pretty","json:target/cucumber.json"},
+		tags={"@LoginTest,@SmokeTest"}
 		)
 public class login_runner {
 

@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 
 import junit.framework.Assert;
 
@@ -96,6 +97,30 @@ public class LoginstepDefinition {
 		String product_price=driver.findElement(By.xpath("//li[@id='result_0']/div[@class='s-item-container']/div/div/child::div[@class='a-fixed-left-grid-col a-col-right']/child::div/child::div[@class='a-column a-span7']/child::div/a/child::span[@class='a-size-base a-color-price s-price a-text-bold']")).getText();
 		System.out.println("First IOS product price in list:"+product_price);
 	}
-
+	
+	@Then("^User enters username and password$")
+	public void user_enters_username_and_password(DataTable arg1) throws Throwable {
+		for (Map<String, String> data : arg1.asMaps(String.class, String.class)) {
+			
+			driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys(data.get("username"),Keys.ENTER);
+			driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys(data.get("password"),Keys.ENTER);
+			/*driver.findElement(By.xpath("//*[contains(text(),'Hello')]")).click();
+			driver.findElement(By.xpath("//*[text()='Sign Out']")).click();*/
+			
+		
+			}
+	}
+//	@Then("^Validate logged users$")
+//	public void validate_logged_users(DataTable arg1) throws Throwable {
+//			for (Map<String, String> data : arg1.asMaps(String.class, String.class)) {
+//			
+//				String username=driver.findElement(By.xpath("//span[@class='nav-line-1' and contains(text(),user)]")).getText();
+//				System.out.println("Username is:"+username);
+//				Assert.assertEquals(username, data.get("user"));
+//				driver.findElement(By.xpath("//*[contains(text(),'Hello')]")).click();
+//				driver.findElement(By.xpath("//*[text()='Sign Out']")).click();
+//				
+//			}
+	//}
 
 }
